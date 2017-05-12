@@ -37,7 +37,7 @@ var employeeProvider= new EmployeeProvider('localhost', 27017);
 app.get('/', function(req, res){
   employeeProvider.findAll(function(error, emps){
       res.render('index', {
-            title: 'Employees',
+            title: 'Employees of Persistent !',
             employees:emps
         });
   });
